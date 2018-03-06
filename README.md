@@ -40,6 +40,9 @@ I don't know if I will ever get to any of these as I don't plan on making this m
 
 ### References
 https://gist.github.com/landonf/1046134
+
 http://www.m4b.io/reverse/engineering/mach/binaries/2015/03/29/mach-binaries.html
+
 https://opensource.apple.com/source/xnu/xnu-344/EXTERNAL_HEADERS/mach-o/
+
 https://opensource.apple.com/source/dyld/dyld-132.13/src/ImageLoaderMachOCompressed.cpp
