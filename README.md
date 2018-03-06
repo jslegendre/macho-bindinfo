@@ -2,7 +2,7 @@
 A small tool to list all external functions and the libraries/frameworks they come from.
 
 ## How it works
-This program works by first reading the header of your Mach-O file to find the the appropriate offsets then parsing the export trie. This program was written to support 32bit, 64bit, and FAT binaries as well as little and big endian systems. I do not have many machines to test on so I have included a python script with some unit tests for you to run to make sure this will work on your system.  If you run into problems please open an issue so I can take a look at it :) 
+This program works by first reading the header of your Mach-O file to find the the appropriate offsets then parsing the export trie. This program was written to support 32bit, 64bit, and FAT binaries on both little and big endian systems. However I do not have a pile of Apple machines to test on so I have included a python script with some unit tests for you to run to make sure this will work on your system.  If you run into problems please open an issue so I can take a look at it :) 
 
 ### Building
 The make file will run the unit tests by default but you are free to skip them.
