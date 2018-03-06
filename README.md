@@ -12,6 +12,7 @@ $ ./binddump /path/to/binary
 ```
 
 ### Sample input/output
+I would recommend piping the output into a text file as most applications will create a list larger than the terminal buffer but hey, you do you man.
 ```
 $ ./binddump /Applications/iTunes.app/Contents/MacOS/iTunes
 $ /System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate
