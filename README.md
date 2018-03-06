@@ -1,5 +1,5 @@
 # macho-binddump
-A small tool to list all external functions and the libraries/frameworks they come from.
+A small tool written in C list all external functions and the libraries/frameworks they come from.
 
 ## How it works
 This program works by first reading the header of your Mach-O file to find the the appropriate offsets then parsing the export trie. This program was written to support 32bit, 64bit, and FAT binaries as well as little and big endian systems. I do not have many machines to test on so I have included a python script with some unit tests for you to run to make sure this will work on your system.  If you run into problems please open an issue so I can take a look at it :) 
