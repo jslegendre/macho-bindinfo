@@ -60,7 +60,7 @@ void free_dyld_cmd(void **dyld_cmd) {
 
 void free_dyld_array(dyld_t *dylds) {
 	size_t arr_size = sizeof(dylds)/sizeof(dylds[0]);
-	for(int i = 0; (size_t)i < arr_size; i++) {
+	for(uintptr_t i = 0; i < arr_size; i++) {
 		free((void *)dylds[i].dyld_cmd);
 		free(dylds[i].name);
 		free(dylds[i].lazy_symbols);
@@ -267,13 +267,13 @@ void print_info(dyld_t *dylds, uintptr_t ndyld) {
         printf("%s\n", dylds[i].name);
         if(dylds[i].nnon_syms) {
             printf("    Non-Lazy:\n");
-            for(int j = 0; (unsigned)j<dylds[i].nnon_syms; j++) {
+            for(uintptr_t j = 0; j<dylds[i].nnon_syms; j++) {
                 printf("      %s\n", dylds[i].non_symbols[j]);
             }
         }
         if(dylds[i].nlazy_syms) {
             printf("    Lazy:\n");
-            for(int j = 0; (unsigned)j<dylds[i].nlazy_syms; j++) {
+            for(uintptr_t j = 0; j<dylds[i].nlazy_syms; j++) {
                 printf("      %s\n", dylds[i].lazy_symbols[j]); 
             }
         }
